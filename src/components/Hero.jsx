@@ -10,7 +10,7 @@ const Hero = () => {
             <p>Our digital marketing agency helps businesses<br /> grow and succeed online through a range of<br /> services including SEO, PPC, social media marketing,<br /> and content creation.</p>
             <button>Book a consultation</button>
         </div>
-        <div>
+        <div className='heroImage'>
             <img src="/Illustration.png" alt="home hero image" />
         </div>
         </div>
@@ -39,11 +39,11 @@ const Container = styled.div`
    
 
     h1{
-        font-size: 45px;
+        font-size: 50px;
         margin-bottom: 15px;
     }
     p{
-        font-size: 20px;
+        font-size: 17px;
         margin-bottom: 15px;
     }
     button{
@@ -53,20 +53,19 @@ const Container = styled.div`
         cursor: pointer;
         border-radius: 10px;
     }
-    img{
-        width: 77%;
+    .heroImage{
+        /* width: 10%; */
     }
     .images{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        flex-wrap: wrap;
-        margin: 0px 70px;
+        margin-bottom: 20px;
     }
         
         
     .images img{
-        width: 70%;
+        width: 65%;
     }
 
 `

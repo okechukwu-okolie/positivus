@@ -33,19 +33,19 @@ const Headers = styled.div`
         .logo{
             display:flex;
             align-items: center;
+
         }
         .links{
-            margin-right: -120px;
+            margin-right: -210px;
         }
         .links ul{
             display: flex;
             align-items: center;
-            /* justify-content: space-between; */
             list-style: none;
         }
         .links li{
             margin: 0px 17px ;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         button{
