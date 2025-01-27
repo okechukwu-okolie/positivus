@@ -9,7 +9,8 @@ const Footer = () => {
             <img src="/logoWhite.png" alt="logo" />
             <h1>Positivus</h1>
         </div>
-        <div className='links'>
+        {/* <div className='links'> */}
+          <div>
             <ul>
                 <a href=""><li>About Us</li></a>
                 <a href=""><li>Services</li></a>
@@ -23,6 +24,7 @@ const Footer = () => {
           <img src="/facebook.png" alt="" />
           <img src="/x.png" alt="" />
         </div>
+        {/* </div> */}
        </div>
        <div className='contact'>
         <div className='info'>
@@ -50,12 +52,12 @@ export default Footer
     background-color: black;
     color:white;
     border-radius: 30px 30px 0px 0px;
-    padding-bottom: 30px;
+    padding: 30px;
+    /* width: 90%; */
+    margin: 0 auto;
   .headers{
     display:flex;
     justify-content: space-between;
-    margin-top: 35px;
-    padding-top: 10px;
     align-items: center
   }
 
@@ -63,23 +65,28 @@ export default Footer
             display:flex;
             align-items: center;
         }
-        h1{
-                margin-left: -10%;
-            }
+        .links{
+          display: flex;
+          justify-content: space-around;
+        }
         
-        .links ul{
+        
+         ul{
             display: flex;
             align-items: center;
             list-style: none;
         }
-        .links li{
+         li{
             margin: 0px 10px ;
             font-size: 15px;
             color:white;
         }
         .socials{
             display: flex;
-            margin-right: -30px;
+
+            img{
+              margin-left: 10px;
+            }
         }
   
       
@@ -90,7 +97,9 @@ export default Footer
   margin-top: 50px;
 }
 .info{
- 
+ p{
+  margin-bottom: 10px;
+ }
   button{
     background-color: #B9FF66;
     border-radius: 5px;
@@ -106,6 +115,7 @@ export default Footer
   display: flex;
   align-items: center;
   width: 50%;
+  padding: 20px;
 
   input{
     padding: 10px;
@@ -114,6 +124,7 @@ export default Footer
     background-color: transparent;
     color: white;
     width: 48%;
+    margin-right: 20px;
   }
   button{
     background-color: #B9FF66;
@@ -124,7 +135,7 @@ export default Footer
   }
 }
 hr{
-  width: 80%;
+  width: 100%;
   text-align: center;
   color: red;
   margin: 30px 0px;

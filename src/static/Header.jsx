@@ -9,6 +9,7 @@ const Header = () => {
             <h1>Positivus</h1>
         </div>
         <div className='links'>
+            <div className='address'>
             <ul>
                 <li>About Us</li>
                 <li>Services</li>
@@ -18,6 +19,7 @@ const Header = () => {
             </ul>
         </div>
         <button>Request a Quote</button>
+        </div>
     </Headers>
   )
 }
@@ -29,15 +31,18 @@ const Headers = styled.div`
         justify-content: space-around;
         margin-top: 35px;
         align-items: center;
+        .links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         .logo{
             display:flex;
             align-items: center;
 
         }
-        .links{
-            margin-right: -210px;
-        }
+        
         .links ul{
             display: flex;
             align-items: center;
